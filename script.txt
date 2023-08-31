@@ -1,0 +1,484 @@
+
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CSI task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+
+body {
+overflow-x: hidden;
+  background-color: rgb(2, 4, 122);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 0px 20px;
+}
+
+nav {
+  color: white;
+  display: flex;
+  font-size: 16px;
+  font-family: Merriweather, serif;
+  margin-right: 20px;
+  margin: 20px;
+  justify-content: space-between;
+  margin-left: 30px;
+align-items: center;
+}
+
+.links {
+    margin-left: 540px;
+}
+  
+.navimage {
+  display: inline-block;
+  position: absolute;
+  left: 1150px; 
+  bottom: 164px; 
+  width: 250px;
+}
+
+
+.navimage img {
+  height: 50%; 
+  width: 360px; 
+  object-fit: cover; 
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+/*!!!*/
+ text-align:center;
+  justify-items: center;
+/*!!!*/
+  margin: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+position: relative;
+  transition: border 0.5s ease-in-out;
+  
+}
+  nav a.active {
+  font-weight: bold;
+}
+
+nav a:hover {
+  border: 2px solid white; /* Add border on hover */
+  padding: 8px; /* Add padding to create space for the border */
+border-radius: 8px; 
+}
+
+nav img {
+  height: 40px; 
+  margin-right: 170px;
+  margin-left:10px;
+}
+
+.container h1 {
+  width: 50%;
+  color: white;
+  padding: 20px;
+  margin-left: 40px;
+  margin-top: 70px;
+}
+.container h6{
+  width: 50%;
+  color: white;
+  margin-left: 60px;
+  font-family: Raleway, sans-serif;
+  /*font-style: italic;*/
+}
+
+/* Center content */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textbox{
+margin-left: -10px;
+  display: inline-block; 
+  width: 100%;
+}
+
+
+.feat{
+  /*display: flex;*/
+  background-color: white;
+  color: black;
+  margin-top: 216px;  /*adjust this for hand image*/
+}
+
+#title1{
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  padding: 3px; 
+}
+
+.left{
+text-align: right;
+      bottom: 60px;
+    margin-left: 230px;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+}
+  
+  
+h5{
+  margin-bottom: 0px;
+}
+.left h6, .right h6{
+  margin-top: 5px;
+}
+
+.left h5{
+    margin-left: 60px;
+padding-right: 100px;
+  }
+  .left h6{
+        padding-right: 99px;
+    margin-left: -135px;
+  }
+
+.icon2{
+    position: relative;
+    bottom: -40px;
+    margin-left: -62px;
+}
+
+.right{
+  bottom: 555px;
+    display: inline-block;
+    margin-left: 910px;
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+  /*change these for overlapping icons*/
+  .right h5{
+    margin-left: 50px;
+  }
+  .right h6{
+    margin-left: 50px;
+  }
+
+.icon {
+  position: relative;
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 271px;
+    top: 42px;
+    padding-right: 30px;
+}
+
+.center-image{
+  bottom: 15px;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    margin-left: -42px;
+    padding: 20px;
+}
+  .review {
+    position: relative;
+      background-color: white;
+      text-align: center;
+      padding: 20px;
+    bottom: 450px;
+    }
+
+    .review h2 {
+      color: black;
+      margin: 0;
+      padding: 10px;
+      font-size: 24px;
+    }
+  
+  .profile1,
+.profile2,
+.profile3 {
+  display: inline-block;
+    width: 30%;
+    margin: -39px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.profile1 img,
+.profile2 img,
+.profile3 img {
+ width: 72px;
+    height: 71px;
+    border-radius: 50%;
+}
+
+
+    .name1,
+.name2,
+.name3 {
+  margin-top: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+}
+
+.company1,
+.company2,
+.company3 {
+  font-size: 11px;
+  color: gray;
+margin-top: 10px;
+}
+
+.rating1,
+.rating2,
+.rating3 {
+  margin-top: 10px;
+}
+
+.rating1 img,
+.rating2 img,
+.rating3 img {
+  width: 80px;
+  height: 28px;
+margin-top: -12px;
+}
+
+.review-text,
+.review-text2,
+.review-text3 {
+position: relative;
+    font-family: serif;
+    display: block;
+    margin-top: 3px;
+    text-align: left;
+    color: #262525;
+    font-size: 11px;
+    width: 55%;
+    margin-left: 108px;
+}
+  
+  .contact h2{
+    position: relative;
+    text-align: center; 
+    bottom: 290px;
+  }
+ 
+  
+  .contleft {
+    position: relative;
+    margin-left: 600px;
+    bottom: 282px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  
+  .contleft h6{
+       position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    bottom: 1px;
+  }
+  
+  .contright{
+    position: relative;
+    margin-left: 80px;
+    bottom: 280px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  .contright h6{
+    position: relative;
+    display: inline-block;
+    margin-left: 8px;
+    bottom: 1px;
+  }
+  
+
+</style>
+
+  </head>
+  <body>
+     <header>
+       <nav>
+        <div class="navlogo">
+         <img src="logo.png" alt="Logo">
+         </div>
+         <div class="links">
+         <a href = "#container">About</a>
+      <a href = "#textbox">Features</a>
+         <a href = "#">Integrations</a>
+      <a href = "#">Clients</a>
+         <a href = "#review">Testimonials</a>
+         <a class="active" href="#contact">Contact Us</a>
+         </div>
+         <div class="navimage">
+  <img src="banner.png" alt="Image">
+</div>
+       </nav>
+    </header>
+    
+    <div id="container" class="container">
+    <h1>
+      The Quicker, Better, <br/>
+      Smarter Expense <br/>
+      Management Tool
+    </h1>
+    <h6>
+      Is your business caught in the red-tape of endless paper trails,
+      <br/>
+      the rigmarole of stuck approvals, faulty financial data entry <br/>
+      and hours of number crunching? We've got you covered.
+    </h6>
+    </div>
+    
+    <div class="feat">
+      <div id="title1">
+      <h2>Tons of Features</h2>
+      </div>
+      
+  <!--...-->  
+      <div id="textbox" class="textbox">
+      <div class="left">
+        <h5><div class="icon"><img src="1.png" alt="Icon 1"></div>
+        Budget Multiple Projects</h5>
+        <h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          
+          <h5><div class="icon"><img src="2.png" alt="Icon 2"></div>
+          Invoice Scan & Auto-Import</h5>
+        <h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          
+          <h5><div class="icon"><img src="3.png" alt="Icon 3"></div>
+          Inventory Tracker</h5>
+        <h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          
+          <h5><div class="icon"><img src="4.png" alt="Icon 4"></div>
+          Approval System with Levels</h5>
+        <h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+      </div>
+    
+<div class="center-image">
+        <img src="phone.png" alt="Center Image">
+      </div>
+          
+          <div class="right">
+            <h5><div class="icon2"><img src="5.png" alt="Icon 5"></div>Assign Project Members</h5>
+        <h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+
+          
+          <h5><div class="icon2"><img src="6.png" alt="Icon 6"></div>Dashboard</h5>
+        <h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+
+          
+          <h5><div class="icon2"><img src="7.png" alt="Icon 7"></div>Duplicates Detector</h5>
+        <h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+
+          
+          <h5><div class="icon2"><img src="8.png" alt="Icon 8"></div>Integrations with 3rd Party Tools</h5>
+        <h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+          </div>  <!--RIGHT DIV ENDS--> 
+      </div> <!--TEXTBOX DIV ENDS--> 
+         </div> <!--FEAT DIV ENDS--> 
+          
+         <div id="review" class="review">
+  <h2>Read Our Rave Reviews</h2>
+           
+<div class="profile1">
+      <img src="prof1.png" alt="Profile 1">
+      <div class="name1">Billy J. Olds</div>
+      <div class="company1">TCC Inc.</div>
+      <div class="rating1">
+        <img src="5star.png" alt="5 Stars">
+      </div>
+      <div class="review-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus adio at varius vestibulum. Nam sollicitudin justo.
+      </div>
+    </div>
+    <!-- Repeat the above profile section for two more reviews -->
+    <div class="profile2">
+      <img src="prof2.png" alt="Profile 2">
+      <div class="name2">Jerome T. Armstrong</div>
+      <div class="company2">OPNB Corp</div>
+      <div class="rating2">
+        <img src="5star.png" alt="5 Stars">
+      </div>
+      <div class="review-text2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus adio at varius vestibulum. Nam sollicitudin justo.
+      </div>
+    </div>
+    <div class="profile3">
+      <img src="prof3.png" alt="Profile 3">
+      <div class="name3">William G. Grace</div>
+      <div class="company3">C Collective</div>
+      <div class="rating3">
+        <img src="5star.png" alt="5 Stars">
+      </div>
+      <div class="review-text3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus adio at varius vestibulum. Nam sollicitudin justo.
+      </div>
+    </div>
+  </div> 
+           
+          </div>  <!--REVIEW DIV ENDS-->  
+   <!--<div class="rev1"></div>-->       
+
+<div id="contact" class="contact">
+  <h2>Ready to Simplify your Finances?</h2>
+            </div>
+            
+            <div class="contleft">
+              <i class="fa fa-envelope"></i>
+                <h6>hello@gokozo.com</h6>
+            </div>
+              
+<div class="contright">
+  <i class="fa fa-phone"></i>
+                <h6>9123134092</h6>
+              </div>
+
+<script>
+
+  // Smooth scrolling for navigation links
+  document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll("nav a");
+
+    links.forEach(link => {
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        const targetId = link.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  });
+
+</script>
+          
+    </body
+</html>
